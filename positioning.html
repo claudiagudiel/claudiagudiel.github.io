@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+ #static{
+ position: static;
+ }   
+ #relative{
+position: relative ;
+top: 15px;
+right: 10px;
+ }
+ #absolute{
+position: absolute;
+top: 80px;
+right: 10px;
+ }
+ #fixed{
+position: fixed;
+bottom: 10px;
+right:10px;
+ }
+ #uno{
+    position: absolute;
+ left: 10px;
+ z-index: 1;
+ }
+ #dos{
+    position: absolute;
+left: 30px;
+z-index: 2;
+ }
+ #tres{
+    position: absolute;
+left:60px;
+z-index: 3;
+ }
+</style>
+<body style="background-color:rgb(150, 213, 221);">
+<h1>Positioning Claudia Gudiel</h1>
+<p>La propiedad positioning especifica el método usado para posicionar un elemento</p>
+<h2>Static</h2>
+<p>El elemento es posicionado de acuerdo al flujo normal del documento. Las propiedades top, right, bottom, left, and z-index no tienen efecto. Este es el valor por defecto.</p>
+    <img src="https://pbs.twimg.com/profile_images/932211484/cuadrado_rojo_400x400.png" alt="Rojo" width="100">
+    <img id="static" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAA1BMVEVCpfXKwypLAAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAcTgAAG6EJuyAAAAAElFTkSuQmCC" alt="Azul" width="100">
+    <img src="https://pbs.twimg.com/profile_images/932211484/cuadrado_rojo_400x400.png" alt="Rojo" width="100">
+<h2>Relative</h2>
+<p>El elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado con relación a sí mismo, con base en los valores de top, right, bottom, and left. </p>
+    <img src="https://pbs.twimg.com/profile_images/932211484/cuadrado_rojo_400x400.png" alt="Rojo" width="100">
+    <img id="relative" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAA1BMVEVCpfXKwypLAAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAcTgAAG6EJuyAAAAAElFTkSuQmCC" alt="Azul" width="100">
+    <img src="https://pbs.twimg.com/profile_images/932211484/cuadrado_rojo_400x400.png" alt="Rojo" width="100">
+<h2>Absolute</h2>
+<p>El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en el esquema de la página.Su posición final está determinada por los valores de top, right, bottom, y left.<br> La imagen que aparece en la esquina superior derecha tiene un posicionamiento "absolute"</p>
+    <img src="https://pbs.twimg.com/profile_images/932211484/cuadrado_rojo_400x400.png" alt="Rojo" width="100">
+    <img id="absolute" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAA1BMVEVCpfXKwypLAAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAcTgAAG6EJuyAAAAAElFTkSuQmCC" alt="Azul" width="100">
+    <img src="https://pbs.twimg.com/profile_images/932211484/cuadrado_rojo_400x400.png" alt="Rojo" width="100">
+<h2>Fixed C.Gudiel</h2>
+<p>El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en el esquema de la página.Este se mueve a medida que nos movemos por la página.</p>
+    <img src="https://pbs.twimg.com/profile_images/932211484/cuadrado_rojo_400x400.png" alt="Rojo" width="100">
+    <img id="fixed" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAA1BMVEVCpfXKwypLAAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAcTgAAG6EJuyAAAAAElFTkSuQmCC" alt="Azul" width="100">
+    <img src="https://pbs.twimg.com/profile_images/932211484/cuadrado_rojo_400x400.png" alt="Rojo" width="100">
+<h2>z-index</h2>
+<p>La propiedad "z-index" especifica el orden de pila de un elemento. Un elemento con un orden de pila mayor siempre está delante de un elemento con un orden de pila menor. El rojo tiene un z-index de 1, el azul de 2 y el morado de 3.</p>
+<img id="uno" src="https://pbs.twimg.com/profile_images/932211484/cuadrado_rojo_400x400.png" alt="Rojo" width="100">
+    <img id="dos" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAA1BMVEVCpfXKwypLAAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICXAcTgAAG6EJuyAAAAAElFTkSuQmCC" alt="Azul" width="100">
+    <img id="tres" src="https://berlitzenelexterior.cl/wp-content/uploads/2017/12/cuadrado-pequen%CC%83o-morado-300x300.png" alt="morado" width="100">
+</body>
